@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_abouts",
+  "info": {
+    "name": "Home-about"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Paragraph": {
+      "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "student_infos",
+  "info": {
+    "name": "Student_info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Full_name": {
+      "type": "string"
+    },
+    "Year": {
+      "type": "string"
+    },
+    "Specialite": {
+      "type": "string"
+    },
+    "user": {
+      "via": "student_info",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

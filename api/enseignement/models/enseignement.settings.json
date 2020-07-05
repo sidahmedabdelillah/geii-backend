@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enseignements",
+  "info": {
+    "name": "Enseignement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Anne": {
+      "type": "string"
+    },
+    "Enseignement": {
+      "type": "string"
+    },
+    "Autre": {
+      "type": "string"
+    }
+  }
+}

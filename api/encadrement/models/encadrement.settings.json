@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "encadrements",
+  "info": {
+    "name": "Encadrement"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Type": {
+      "type": "string"
+    },
+    "Condidat": {
+      "type": "string"
+    },
+    "Titre": {
+      "type": "string"
+    },
+    "Specialite": {
+      "type": "string"
+    },
+    "Anne": {
+      "type": "string"
+    },
+    "prof_infos": {
+      "via": "encadrements",
+      "collection": "prof-info"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slides",
+  "info": {
+    "name": "Slides"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Paragraph": {
+      "type": "string"
+    },
+    "Picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/encadrements",
+      "handler": "encadrement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/encadrements/count",
+      "handler": "encadrement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/encadrements/:id",
+      "handler": "encadrement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/encadrements",
+      "handler": "encadrement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/encadrements/:id",
+      "handler": "encadrement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/encadrements/:id",
+      "handler": "encadrement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

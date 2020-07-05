@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projet_recherches",
+  "info": {
+    "name": "Projet_recherche"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Tittre": {
+      "type": "string"
+    },
+    "Mot_cle": {
+      "type": "string"
+    },
+    "Anne": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "prof_infos": {
+      "via": "projet_recherches",
+      "collection": "prof-info"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prof_infos",
+  "info": {
+    "name": "Prof_info"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Enseignement": {
+      "collection": "enseignement"
+    },
+    "Activite_pedagogique": {
+      "type": "text"
+    },
+    "Experience": {
+      "type": "text"
+    },
+    "Livre": {
+      "type": "text"
+    },
+    "Conference": {
+      "type": "text"
+    },
+    "encadrements": {
+      "collection": "encadrement",
+      "via": "prof_infos",
+      "dominant": true
+    },
+    "projet_recherches": {
+      "collection": "projet-recherch",
+      "via": "prof_infos",
+      "dominant": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "prof_info"
+    },
+    "Full_name": {
+      "type": "string"
+    },
+    "communications": {
+      "collection": "communications"
+    },
+    "publications": {
+      "collection": "publications"
+    },
+    "Grade": {
+      "type": "string"
+    },
+    "Fonction_actuel": {
+      "type": "string"
+    },
+    "Specialite": {
+      "type": "string"
+    },
+    "Profile": {
+      "type": "string"
+    }
+  }
+}
