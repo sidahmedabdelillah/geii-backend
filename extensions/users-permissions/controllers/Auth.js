@@ -366,6 +366,7 @@ module.exports = {
           Anne: item.Anne,
           Enseignement: item.Enseignement,
           Autre: item.Autre,
+          Specialite: item.Specialite,
         });
         Promise_enseignement.push(Enseignment);
       });
@@ -418,7 +419,9 @@ module.exports = {
       Grade: params.info.Grade,
       Fonction_actuel: params.info.Grade,
       Specialite: params.info.Specialite,
-      Profile: params.info.Profile,
+      Profile_g: params.info.Profile_g,
+      Profile_linked: params.info.Profile_linked,
+      Profile_id: params.info.Profile_id,
       Conference: params.info.Conference,
       encadrements: array_encadrement,
       projet_recherches: array_projet,

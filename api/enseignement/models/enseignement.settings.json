@@ -17,6 +17,9 @@
     },
     "Autre": {
       "type": "string"
+    },
+    "Specialite": {
+      "type": "string"
     }
   }
 }

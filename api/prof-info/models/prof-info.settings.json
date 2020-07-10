@@ -57,7 +57,16 @@
     "Specialite": {
       "type": "string"
     },
-    "Profile": {
+    "Profile_g": {
+      "type": "string"
+    },
+    "Profile_linked": {
+      "type": "string"
+    },
+    "Profile_id": {
+      "type": "string"
+    },
+    "Bureau": {
       "type": "string"
     }
   }
