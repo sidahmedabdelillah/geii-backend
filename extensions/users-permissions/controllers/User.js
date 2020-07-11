@@ -32,39 +32,7 @@ module.exports = {
       console.log("searvhing");
     } else {
       users = await strapi.plugins["users-permissions"].services.user.fetchAll(
-        ctx.query,
-        [
-          {
-            path: "prof_info",
-            populate: {
-              path: "Enseignement",
-            },
-          },
-          {
-            path: "prof_info",
-            populate: {
-              path: "encadrements",
-            },
-          },
-          {
-            path: "prof_info",
-            populate: {
-              path: "projet_recherches",
-            },
-          },
-          {
-            path: "prof_info",
-            populate: {
-              path: "communications",
-            },
-          },
-          {
-            path: "prof_info",
-            populate: {
-              path: "publications",
-            },
-          },
-        ]
+        ctx.query
       );
     }
 
