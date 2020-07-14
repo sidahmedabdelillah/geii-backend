@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "autos",
+  "info": {
+    "name": "Auto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "discription": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "collection": "paragraph"
+    }
+  }
+}

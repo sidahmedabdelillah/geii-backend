@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "ses",
+  "info": {
+    "name": "SE"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "discription": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "collection": "paragraph"
+    }
+  }
+}

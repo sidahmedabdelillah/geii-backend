@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/telecom",
+      "handler": "telecom.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/telecom",
+      "handler": "telecom.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/telecom",
+      "handler": "telecom.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
