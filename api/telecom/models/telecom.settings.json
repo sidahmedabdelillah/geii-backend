@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "telecoms",
+  "info": {
+    "name": "Telecom"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "discription": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "collection": "paragraph"
+    }
+  }
+}

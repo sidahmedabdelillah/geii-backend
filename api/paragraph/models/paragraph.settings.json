@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paragraphs",
+  "info": {
+    "name": "Paragraph"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "tittle": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}
