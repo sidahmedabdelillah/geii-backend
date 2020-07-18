@@ -25,6 +25,10 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "Text": {
+      "type": "richtext",
+      "required": true
     }
   }
 }
