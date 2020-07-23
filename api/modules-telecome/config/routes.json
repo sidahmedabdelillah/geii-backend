@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modules-telecomes",
+      "handler": "modules-telecome.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modules-telecomes/count",
+      "handler": "modules-telecome.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modules-telecomes/:id",
+      "handler": "modules-telecome.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/modules-telecomes",
+      "handler": "modules-telecome.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modules-telecomes/:id",
+      "handler": "modules-telecome.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modules-telecomes/:id",
+      "handler": "modules-telecome.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

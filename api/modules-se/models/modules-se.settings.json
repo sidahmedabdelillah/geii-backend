@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules_ses",
+  "info": {
+    "name": "Modules_SE"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "module": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "richtext"
+    },
+    "Semestre": {
+      "type": "enumeration",
+      "enum": [
+        "Premier",
+        "Deuxieme"
+      ]
+    },
+    "Anne": {
+      "type": "enumeration",
+      "enum": [
+        "Premiere_annee",
+        "Deuxieme_annee",
+        "Troisieme_annee"
+      ]
+    }
+  }
+}

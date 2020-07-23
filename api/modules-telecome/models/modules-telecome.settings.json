@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modules_telecomes",
+  "info": {
+    "name": "modules_Telecome"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "module": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "richtext"
+    },
+    "Credit": {
+      "type": "integer"
+    },
+    "Anne": {
+      "type": "enumeration",
+      "enum": [
+        "Premiere_annee",
+        "Deuxieme_annee",
+        "Troisieme_annee"
+      ]
+    },
+    "Semestre": {
+      "type": "enumeration",
+      "enum": [
+        "Premier",
+        "Deuxieme"
+      ]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "module_autos",
+  "info": {
+    "name": "module_auto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "module": {
+      "type": "string"
+    },
+    "discription": {
+      "type": "richtext"
+    },
+    "Anne": {
+      "type": "enumeration",
+      "enum": [
+        "Premiere_annee",
+        "Deuxieme_annee",
+        "Troisieme_annee"
+      ]
+    },
+    "Semestre": {
+      "type": "enumeration",
+      "enum": [
+        "Premier",
+        "Deuxieme"
+      ]
+    }
+  }
+}
