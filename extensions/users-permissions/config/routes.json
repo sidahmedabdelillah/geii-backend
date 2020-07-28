@@ -15,6 +15,7 @@
         }
       }
     },
+
     {
       "method": "POST",
       "path": "/auth/local/registerTeacher",
@@ -30,6 +31,7 @@
         }
       }
     },
+
     {
       "method": "GET",
       "path": "/users/teachers",
@@ -45,6 +47,7 @@
         }
       }
     },
+
     {
       "method": "GET",
       "path": "/users/teachers/:id",
