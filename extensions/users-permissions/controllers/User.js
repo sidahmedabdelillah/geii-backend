@@ -87,4 +87,20 @@ module.exports = {
     // Send 200 `ok`
     ctx.send(data);
   },
+
+  /**
+   * Retrieve authenticated user.
+   * @return {Object|Array}
+   */
+  async mer(ctx) {
+    const user = ctx.state.user;
+    if (!user) {
+      return ctx.badRequest(null, [
+        { messages: [{ id: "No authorization header was found" }] },
+      ]);
+    }
+
+    const data = sanitizeUser(user);
+    ctx.send(data);
+  },
 };
