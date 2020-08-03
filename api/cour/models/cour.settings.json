@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cours",
+  "info": {
+    "name": "cour"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Module": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "cour",
+        "td",
+        "tp",
+        "exam"
+      ]
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "document": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "specialite": {
+      "type": "enumeration",
+      "enum": [
+        "STR",
+        "SE",
+        "AUTO"
+      ]
+    }
+  }
+}
