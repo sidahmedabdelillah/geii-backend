@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_specialite_paragraphs",
+  "info": {
+    "name": "Paragraph",
+    "icon": "apple-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Text": {
+      "type": "richtext"
+    }
+  }
+}

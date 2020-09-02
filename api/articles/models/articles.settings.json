@@ -12,9 +12,6 @@
     "Title": {
       "type": "text"
     },
-    "Paragraph": {
-      "type": "richtext"
-    },
     "Picture": {
       "model": "file",
       "via": "related",
@@ -26,9 +23,15 @@
       "plugin": "upload",
       "required": false
     },
-    "Text": {
-      "type": "richtext",
-      "required": false
+    "Paragraph": {
+      "type": "richtext"
+    },
+    "extra": {
+      "type": "dynamiczone",
+      "components": [
+        "article.extra-article",
+        "images.images"
+      ]
     }
   }
 }

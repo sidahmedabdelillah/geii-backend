@@ -17,6 +17,12 @@
     },
     "Notre_mission": {
       "type": "richtext"
+    },
+    "extra": {
+      "type": "dynamiczone",
+      "components": [
+        "specialite.paragraph"
+      ]
     }
   }
 }

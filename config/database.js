@@ -5,7 +5,9 @@ module.exports = ({ env }) => ({
       connector: "mongoose",
       settings: {
         client: "mongo",
-        uri: env("localhost"),
+        uri: `mongodb://${env("DB_USER")}:${env("DB_PWD")}@${env(
+          "DB_HOST"
+        )}:27017/${env("DB_NAME")}?authSource=admin`,
       },
       options: {
         useNullAsDefault: true,
