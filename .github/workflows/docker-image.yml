@@ -1,0 +1,17 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+#   - name: Build the Docker image
+#      run: docker build . --file Dockerfile --tag abdoubentegar/geii-backend:$(date +%s)
+    - name: login 
+      run: |
+        echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
