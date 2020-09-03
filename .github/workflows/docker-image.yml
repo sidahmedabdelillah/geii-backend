@@ -16,4 +16,4 @@ jobs:
         echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
     - name: push to docker hub
       run: |
-        docker push geii-backen:test
+        docker push geii-backend:test
