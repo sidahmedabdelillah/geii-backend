@@ -2,18 +2,16 @@ name: Push to DockerHub
 on: [push]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag abdoubentegar/geii-backend:test
-    - name: login 
-      run: |
-        echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
-    - name: push to docker hub
-      run: |
-        docker push abdoubentegar/geii-backend:test
+      - uses: actions/checkout@v2
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag abdoubentegar/geii-backend:latest
+      - name: login
+        run: |
+          echo ${{ secrets.DOCKER_PWD }} | docker login -u ${{ secrets.DOCKER_USER }} --password-stdin
+      - name: push to docker hub
+        run: |
+          docker push abdoubentegar/geii-backend:latest
