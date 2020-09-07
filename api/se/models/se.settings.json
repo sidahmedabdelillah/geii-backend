@@ -12,9 +12,6 @@
     "discription": {
       "type": "string"
     },
-    "paragraphs": {
-      "collection": "paragraph"
-    },
     "Notre_mission": {
       "type": "richtext"
     },
@@ -23,6 +20,17 @@
       "components": [
         "specialite.paragraph"
       ]
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }

@@ -1841,7 +1841,7 @@ asn1.js@^5.2.0, asn1.js@^5.3.0:
     minimalistic-assert "^1.0.0"
     safer-buffer "^2.1.0"
 
-asn1@~0.2.3:
+asn1@~0.2.0, asn1@~0.2.3:
   version "0.2.4"
   resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.4.tgz#8d2475dfab553bb33e77b54e59e880bb8ce23136"
   integrity sha512-jxwzQpLQjSmWXgwaCZE9Nz+glAG01yF1QnWgbhGwHI5A6FRIEY6IVqtHhIepHqI7/kyEyQEagBC5mBEFlIYvdg==
@@ -2014,7 +2014,7 @@ batch@0.6.1:
   resolved "https://registry.yarnpkg.com/batch/-/batch-0.6.1.tgz#dc34314f4e679318093fc760272525f94bf25c16"
   integrity sha1-3DQxT05nkxgJP8dgJyUl+UvyXBY=
 
-bcrypt-pbkdf@^1.0.0:
+bcrypt-pbkdf@^1.0.0, bcrypt-pbkdf@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.2.tgz#a4301d389b6a43f9b67ff3ca11a3f6637e360e9e"
   integrity sha1-pDAdOJtqQ/m2f/PKEaP2Y342Dp4=
@@ -2761,6 +2761,16 @@ concat-stream@^1.5.0:
     buffer-from "^1.0.0"
     inherits "^2.0.3"
     readable-stream "^2.2.2"
+    typedarray "^0.0.6"
+
+concat-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-2.0.0.tgz#414cf5af790a48c60ab9be4527d56d5e41133cb1"
+  integrity sha512-MWufYdFw53ccGjCA+Ol7XJYpAlW6/prSMzuPOTRnJGcGzuhLn4Scrz7qf6o8bROZ514ltazcIFJZevcfbo0x7A==
+  dependencies:
+    buffer-from "^1.0.0"
+    inherits "^2.0.3"
+    readable-stream "^3.0.2"
     typedarray "^0.0.6"
 
 connect-history-api-fallback@^1.6.0:
@@ -4158,6 +4168,14 @@ fstream@^1.0.0, fstream@^1.0.12:
     inherits "~2.0.0"
     mkdirp ">=0.5 0"
     rimraf "2"
+
+ftp@^0.3.10:
+  version "0.3.10"
+  resolved "https://registry.yarnpkg.com/ftp/-/ftp-0.3.10.tgz#9197d861ad8142f3e63d5a83bfe4c59f7330885d"
+  integrity sha1-kZfYYa2BQvPmPVqDv+TFn3MwiF0=
+  dependencies:
+    readable-stream "1.1.x"
+    xregexp "2.0.0"
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -7636,7 +7654,17 @@ reactstrap@8.4.1:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
-readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
+readable-stream@1.1.x:
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.1.14.tgz#7cf4c54ef648e3813084c636dd2079e166c081d9"
+  integrity sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
+  dependencies:
+    core-util-is "~1.0.0"
+    inherits "~2.0.1"
+    isarray "0.0.1"
+    string_decoder "~0.10.x"
+
+readable-stream@^3.0.2, readable-stream@^3.0.6, readable-stream@^3.1.1, readable-stream@^3.4.0, readable-stream@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
   integrity sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
@@ -8007,6 +8035,11 @@ retry-as-promised@^3.2.0:
   integrity sha512-CybGs60B7oYU/qSQ6kuaFmRd9sTZ6oXSc0toqePvV74Ac6/IFZSI1ReFQmtCN+uvW1Mtqdwpvt/LGOiCBAY2Mg==
   dependencies:
     any-promise "^1.3.0"
+
+retry@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/retry/-/retry-0.10.1.tgz#e76388d217992c252750241d3d3956fed98d8ff4"
+  integrity sha1-52OI0heZLCUnUCQdPTlW/tmNj/Q=
 
 retry@^0.12.0:
   version "0.12.0"
@@ -8551,6 +8584,31 @@ sqlite3@latest:
   optionalDependencies:
     node-gyp "3.x"
 
+ssh2-sftp-client@^2.5.0:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/ssh2-sftp-client/-/ssh2-sftp-client-2.5.2.tgz#45df13e19a50631a9ff16730d9fa0b4e991b7419"
+  integrity sha512-fCRn27D7orknW4DkrfOZ9DS9uFrtnoxQdRHVivAPxZWKgmWXeuG0HZj/AnwtRCZglyFwuoWsazvI5/4OiS8F7A==
+  dependencies:
+    concat-stream "^2.0.0"
+    retry "^0.10.1"
+    ssh2 "^0.8.2"
+
+ssh2-streams@~0.4.10:
+  version "0.4.10"
+  resolved "https://registry.yarnpkg.com/ssh2-streams/-/ssh2-streams-0.4.10.tgz#48ef7e8a0e39d8f2921c30521d56dacb31d23a34"
+  integrity sha512-8pnlMjvnIZJvmTzUIIA5nT4jr2ZWNNVHwyXfMGdRJbug9TpI3kd99ffglgfSWqujVv/0gxwMsDn9j9RVst8yhQ==
+  dependencies:
+    asn1 "~0.2.0"
+    bcrypt-pbkdf "^1.0.2"
+    streamsearch "~0.1.2"
+
+ssh2@^0.8.2:
+  version "0.8.9"
+  resolved "https://registry.yarnpkg.com/ssh2/-/ssh2-0.8.9.tgz#54da3a6c4ba3daf0d8477a538a481326091815f3"
+  integrity sha512-GmoNPxWDMkVpMFa9LVVzQZHF6EW3WKmBwL+4/GeILf2hFmix5Isxm7Amamo8o7bHiU0tC+wXsGcUXOxp8ChPaw==
+  dependencies:
+    ssh2-streams "~0.4.10"
+
 sshpk@^1.7.0:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/sshpk/-/sshpk-1.16.1.tgz#fb661c0bef29b39db40769ee39fa70093d6f6877"
@@ -8953,10 +9011,24 @@ strapi-provider-upload-azure-storage@^1.1.1:
   dependencies:
     "@azure/storage-blob" "^10.5.0"
 
+strapi-provider-upload-ftp-v2@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-ftp-v2/-/strapi-provider-upload-ftp-v2-1.1.0.tgz#d8a4d6d51fb732e790a340b60c72c1df2f262acc"
+  integrity sha512-rDkSACwkQv/EPvArAiwyWieSPAZqN2y6NvXbG1eRvCCNVspFTGouHQE/hNks5/JGJKVrcH4a7SdBjI0ffMHMOA==
+  dependencies:
+    ftp "^0.3.10"
+
 strapi-provider-upload-local@3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.0.5.tgz#f11a844f6a07a980e417d93b230ce062bf38550d"
   integrity sha512-FSMa9KnMhXY2c9o+mqAuEKjURp9hgr2zNYASN88ZIw+hGuJvspdssDHSNMEal9neFKzohEhQmhpSXdDYp/fVHw==
+
+strapi-provider-upload-sftp@^3.0.0-alpha.25.2:
+  version "3.0.0-alpha.25.2"
+  resolved "https://registry.yarnpkg.com/strapi-provider-upload-sftp/-/strapi-provider-upload-sftp-3.0.0-alpha.25.2.tgz#a058a6992ed8f49a51f16cfe04523d39a9854b90"
+  integrity sha512-K00BSOcT20uSmrTKZUQ/Pa3QQnAnVfHfmuG69H1H41GIUcnzjX0K0tUOB1EdK+2rPbs4kbKCNaBNNyJlxA3r2A==
+  dependencies:
+    ssh2-sftp-client "^2.5.0"
 
 strapi-utils@3.0.5:
   version "3.0.5"
@@ -9083,6 +9155,11 @@ stream-to-array@^2.3.0:
   dependencies:
     any-promise "^1.1.0"
 
+streamsearch@~0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/streamsearch/-/streamsearch-0.1.2.tgz#808b9d0e56fc273d809ba57338e929919a1a9f1a"
+  integrity sha1-gIudDlb8Jz2Am6VzOOkpkZoanxo=
+
 strict-uri-encode@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz#279b225df1d582b1f54e65addd4352e18faa0713"
@@ -9136,6 +9213,11 @@ string_decoder@^1.0.0, string_decoder@^1.1.1:
   integrity sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
   dependencies:
     safe-buffer "~5.2.0"
+
+string_decoder@~0.10.x:
+  version "0.10.31"
+  resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-0.10.31.tgz#62e203bc41766c6c28c9fc84301dab1c5310fa94"
+  integrity sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
 
 string_decoder@~1.1.1:
   version "1.1.1"
@@ -10035,6 +10117,11 @@ xmlbuilder@~11.0.0:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-11.0.1.tgz#be9bae1c8a046e76b31127726347d0ad7002beb3"
   integrity sha512-fDlsI/kFEx7gLvbecc0/ohLG50fugQp8ryHzMTuW9vSa1GJ0XYWKnhsUx7oie3G98+r56aTQIUB4kht42R3JvA==
+
+xregexp@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/xregexp/-/xregexp-2.0.0.tgz#52a63e56ca0b84a7f3a5f3d61872f126ad7a5943"
+  integrity sha1-UqY+VsoLhKfzpfPWGHLxJq16WUM=
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
