@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "abou_pages",
+  "info": {
+    "name": "about-page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "presentaion": {
+      "type": "richtext"
+    },
+    "comite": {
+      "type": "dynamiczone",
+      "components": [
+        "about.comite"
+      ]
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

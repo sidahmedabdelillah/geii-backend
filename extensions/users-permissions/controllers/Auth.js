@@ -111,7 +111,7 @@ module.exports = {
         promise_projet.push(recherche);
       });
       const result_projet = await Promise.all(promise_projet);
-      result_projet.forEach((item, index) => {
+      result_projet.forEach((item) => {
         array_projet.push(item.id);
       });
     }
@@ -132,8 +132,7 @@ module.exports = {
         Promise_encadrement.push(Encadrement);
       });
       const result_encadrement = await Promise.all(Promise_encadrement);
-      console.log(result_encadrement);
-      result_encadrement.forEach((item, index) => {
+      result_encadrement.forEach((item) => {
         array_encadrement.push(item.id);
       });
     }

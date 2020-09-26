@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_about_comites",
+  "info": {
+    "name": "comite",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "role": {
+      "type": "string"
+    },
+    "nomAffichage": {
+      "type": "string"
+    }
+  }
+}
